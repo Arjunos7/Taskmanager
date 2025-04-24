@@ -17,3 +17,4 @@ class TaskUpdateSerializer(serializers.ModelSerializer):
             if not data.get('completion_report') or data.get('worked_hours') is None:
                 raise serializers.ValidationError("Completion report and worked hours are required when marking task as completed.")
         return data
+    # print
